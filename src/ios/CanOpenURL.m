@@ -17,7 +17,7 @@
 		result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:1];
 		[self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 	} else {
-		result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:0];
+		result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsInt:0];
 		[self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 	}
 }
@@ -30,7 +30,7 @@
 		result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:1];
 		[self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 	} else {
-		result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:0];
+		result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsInt:0];
 		[self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 	}
 }
